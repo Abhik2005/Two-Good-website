@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Futura;
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+.nav{
+    width: 100%;
+    /* background-color: rgb(190, 169, 10); */
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.nav_part1{
+    height: 82px;
+    /* background-color: red; */
+    overflow: hidden;
+    margin-left: 3px;
+}
+.nav_part1 svg{
+    display: block;
+}
+.nav .nav_part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.nav_part2 .links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin:0 20px;
+    text-transform: uppercase;
+}
+.icons{
+    padding:5px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.nav_part2 .icons i{
+    font-size: 18px;
+    margin:0 20px;
+    font-weight: 100;
+}
+.cursor{
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 9;
+}
+.page1{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 2vw;
+    padding-top: 14vw;
+}
+.page1 h1{
+    font-size: 15.5vw;
+    font-family: Futura;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -10px;
+    font-weight: 900;
+}
+.video_container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+    cursor: pointer;
+}
+.video_container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video_container .play{
+    padding: 3vw 2.2vw;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-family: Futura;
+    font-size: 1.3vw;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+    transform: translate(-50%,-50%);
+}
+.page2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 2vw;
+}
+.page2 .first_part_page2{
+    width: 100%;
+}
+.page2_first_line{
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    opacity: 0.6;
+}
+.page2_first_line h5{
+    font-weight:100;
+}
+.page2 .second_part_page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page2 .second_part_page2 .elem{
+    width: 32.5%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 .second_part_page2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page2 .second_part_page2 .elem .details{
+    width: 60%;
+    height: 55px;
+    position: absolute;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+ #elem1 .details{
+    background-color: #C1AAA3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dfd1{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.details1_second_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.details2_second_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.details3_second_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dfd2 h4{
+    font-size: 11.5px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: rgb(57,50,48);
+}
+.dfd2{
+    width: 100%;
+}
+.dfd2 .dfd2_child1{
+    width: 45%;
+    height: 100%;
+}
+.dfd2 .dfd2_child2{
+    width: 45%;
+    height: 100%;
+}
+#elem2 .details{
+    background-color: #F2DCCB;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#elem3 .details{
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.third_part_page2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third_part_page2_child1{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 900;
+    padding-top: 71px;
+}
+.third_part_page2_child2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 160px;
+    gap: 30px;
+}
+.third_part_page2_child2_box{
+    cursor: pointer;
+    padding-bottom: 5px;
+    width: 133px;
+    height: 40px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.line1{
+    width: 133px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    transition: all linear 0.5ms;
+}
+.line2{
+    width: 0px;
+    height: 1px;
+    margin-top: 5px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+
+    transition: all linear 0.5ms;
+}
+/*
+@media (max-width:600px) {
+    .page1{
+        width: 100%;
+        min-height: 70vh;
+        padding: 0 3vw;
+        padding-top: 25vh;
+    }
+    .page1 h1{
+        font-size: 15vw;
+        font-family: Futura;
+        text-transform: uppercase;
+        line-height: 15vw;
+        letter-spacing: -3px;
+        font-weight: 900;
+    }
+    .video_container{
+        height: 25vh;
+        width: 100%;
+        margin-top: 2vw;
+        position: relative;
+        cursor: pointer;
+    }
+    .video_container .play{
+        padding: 13vw 12vw;
+        font-size: 4vw;
+        position: absolute;
+        opacity: 1;
+        scale: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .page2{
+        width: 100%;
+        min-height: 200vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 5vw 3vw;
+    }
+    .page2 .elem{
+        width: 100%;
+        height: 65vh;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+    .page2 .elem img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        scale: 1;
+    }
+} */

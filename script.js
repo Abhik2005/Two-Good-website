@@ -68,23 +68,24 @@ navbarAnimation();
 function videoontainerAnimation() {
   var video_contain = document.querySelector(".video_container");
   var playbtn = document.querySelector(".play");
-  video_contain.addEventListener("mouseenter", function (dets) {
-    gsap.to(playbtn, {
-      scale: 1,
-      opacity: 1,
-    });
-  });
-  video_contain.addEventListener("mouseleave", function () {
-    gsap.to(playbtn, {
-      scale: 0,
-      opacity: 0,
-    });
+  video_contain.addEventListener("mouseenter", function () {
+   gsap.to(playbtn,{
+    scale: 1,
+    opacity: 1,
+   })
   });
   video_contain.addEventListener("mousemove", function (dets) {
     gsap.to(playbtn, {
-      left: dets.clientX,
-      top: dets.clientY,
+      left: dets.clientX - 50,
+      top: dets.clientY - 50,
     });
+    console.log(dets.clientX,dets.clientY)
+  });
+  video_contain.addEventListener("mouseleave", function () {
+     gsap.to(playbtn,{
+    scale: 0,
+    opacity: 0,
+   })
   });
 }
 videoontainerAnimation();
